@@ -12,14 +12,14 @@ This service was built using java, spring boot, and redis.
   1-SNAPSHOT```
 * Start the application by running: ```docker-compose up```. docker compose must be installed 
   locally [https://docs.docker.com/compose/install/]().
-* The service is accessing on port 7000
+* The service is accessible on port 7000
 
 ## Local setup using maven
 * Install and start redis
 * Clone repository: [git clone https://github.com/dubic/rate-limiter.git]()
 * Go to rate-limiter root directory
 * Run with: ```./mvnw spring-boot:run```
-* The service is accessing on port 7000
+* The service is accessible on port 7000
 
 ## Accessing the service
 3 clients with their corresponding limits will be 
