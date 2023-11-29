@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  app:
+    image: docker.io/library/rate-limiter:0.0.1-SNAPSHOT
+    container_name: rate-limiter
+    ports:
+      - "7000:7000"
+#    env_file:
+#      - ./app.env
+  redis:
+    image: redis/redis-stack:latest
+    depends_on:
+      - app
+
